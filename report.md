@@ -54,12 +54,14 @@ IDE: Visual Studio 2015,操作系统： windows 10
 
 ## 所用变量名汇总
 为了便于代码的阅读，将所使用的关键数据类型和变量名列举在下面：
+
 1.数据类型类：
 Point:将点抽象为长度为 2 的整型数组。封装成类
 Start：起点， Point 类；
 Destination：终点， Point 类
 ConnectComponent： typedef std::set<Point> ConnectComponent，连通分
 支
+
 2.变量类：
 - mode： int， 出行方式（0：时间最短； 1：步行数最少）
 - RailWayNumber： int， 地铁条数
@@ -76,7 +78,7 @@ int NumOfStation;当前地铁线的站点数量
 std::vector<Point> Vertice：存储所有点的坐标
 4
 int Adjvex[maxlength]： 邻接矩阵，假设最多包括起点终点需要 maxlength
-个数字才够存储任意两点距离（maxlength=maxsize \*(maxsize+1)/2,cons tint
+个数字才够存储任意两点距离（maxlength=maxsize \*(maxsize+1)/2,const int
 maxsize=1002）
 int ShortestTime：最短时间
 ## 使用自定义 API（方便代码阅读）
